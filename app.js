@@ -11,6 +11,12 @@ class WJax extends HTMLElement {
 
     connectedCallback() {
         const template = html`
+            <style>
+                h2 {
+                    background-color: lime;
+                }
+            </style>
+
             <h2>
                 W-JAX rocks ${this.getAttribute('message')}
                 ${say()}
