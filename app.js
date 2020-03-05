@@ -1,6 +1,7 @@
 import { html, render } from './libs/lit-html/lit-html.js'
 import { say, loadData } from './RandomService.js'
 import './DataOutput.js'
+import './Button.js'
 
 class WJax extends HTMLElement {
 
@@ -22,7 +23,7 @@ class WJax extends HTMLElement {
                 ${say()}
             </h2>
             
-            <button @click=${_ => this.onClick()}>click me</button>
+            <ui5-button @click=${_ => this.onClick()}>click me</ui5-button>
         `;
 
         render(template, this.root);
